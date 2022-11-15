@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">calculator-android</string>
+    <string name="simple">Simple</string>
+    <string name="advanced">Advanced</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="calculator">Calculator</string>
+
 </resources>
