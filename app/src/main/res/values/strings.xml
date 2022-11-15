@@ -6,4 +6,6 @@
     <string name="exit">Exit</string>
     <string name="calculator">Calculator</string>
 
+    <string name="aboutDescription">Calculator\nBartłomiej Sikora 228843\nAwesome calculator.</string>
+
 </resources>

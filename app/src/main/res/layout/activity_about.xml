@@ -4,6 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2B2B2B"
     tools:context=".AboutActivity">
 
+    <TextView
+        android:id="@+id/AboutTV"
+        android:layout_width="264dp"
+        android:layout_height="160dp"
+        android:text="@string/aboutDescription"
+        android:textAlignment="center"
+        android:textColor="#AEA5A5"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
