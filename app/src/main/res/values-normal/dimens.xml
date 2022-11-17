@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calc_btn_size">26sp</dimen>
+    <dimen name="calc_res_size">36sp</dimen>
+
+    <dimen name="calc_btn_size_land">26sp</dimen>
+    <dimen name="calc_res_size_land">36sp</dimen>
+
+    <dimen name="adv_calc_btn_size">26sp</dimen>
+    <dimen name="adv_calc_res_size">36sp</dimen>
+
+    <dimen name="adv_calc_btn_size_land">16sp</dimen>
+    <dimen name="adv_calc_res_size_land">24sp</dimen>
+
+</resources>
