@@ -338,7 +338,7 @@
         android:autofillHints="false"
         android:inputType="none"
         android:maxLength="30"
-        android:text="@string/zero"
+        android:text="@string/default_display"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         android:textSize="@dimen/adv_calc_res_size"
