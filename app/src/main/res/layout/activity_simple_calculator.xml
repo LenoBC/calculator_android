@@ -56,7 +56,8 @@
                 android:layout_weight="1"
                 android:onClick="backspaceBTN"
                 android:text="@string/backspace"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/clearBTN"
@@ -66,7 +67,8 @@
                 android:layout_weight="1"
                 android:onClick="clearBTN"
                 android:text="@string/clear"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/signChangeBTN"
@@ -95,7 +97,8 @@
                 android:layout_weight="1"
                 android:onClick="sevenBTN"
                 android:text="@string/seven"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/eightBTN"
@@ -105,7 +108,8 @@
                 android:layout_weight="1"
                 android:onClick="eightBTN"
                 android:text="@string/eight"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/nineBTN"
@@ -115,7 +119,8 @@
                 android:layout_weight="1"
                 android:onClick="nineBTN"
                 android:text="@string/nine"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/divideBTN"
@@ -125,7 +130,8 @@
                 android:layout_weight="1"
                 android:onClick="divideBTN"
                 android:text="@string/divide"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
         </TableRow>
 
         <TableRow
@@ -140,7 +146,8 @@
                 android:layout_weight="1"
                 android:onClick="fourBTN"
                 android:text="@string/four"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/fiveBTN"
@@ -150,7 +157,8 @@
                 android:layout_weight="1"
                 android:onClick="fiveBTN"
                 android:text="@string/five"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/sixBTN"
@@ -160,7 +168,8 @@
                 android:layout_weight="1"
                 android:onClick="sixBTN"
                 android:text="@string/six"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/multiplyBTN"
@@ -170,7 +179,8 @@
                 android:layout_weight="1"
                 android:onClick="multiplyBTN"
                 android:text="@string/multiply"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
         </TableRow>
 
         <TableRow
@@ -185,7 +195,8 @@
                 android:layout_weight="1"
                 android:onClick="oneBTN"
                 android:text="@string/one"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/twoBTN"
@@ -195,7 +206,8 @@
                 android:layout_weight="1"
                 android:onClick="twoBTN"
                 android:text="@string/two"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/threeBTN"
@@ -205,7 +217,8 @@
                 android:layout_weight="1"
                 android:onClick="threeBTN"
                 android:text="@string/three"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/subtractBTN"
@@ -215,7 +228,8 @@
                 android:layout_weight="1"
                 android:onClick="subtractBTN"
                 android:text="@string/subtract"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
         </TableRow>
 
         <TableRow
@@ -231,7 +245,7 @@
                 android:onClick="zeroBTN"
                 android:text="@string/zero"
                 android:textSize="@dimen/calc_btn_size"
-                tools:ignore="DuplicateSpeakableTextCheck" />
+                tools:ignore="DuplicateSpeakableTextCheck, UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/pointBTN"
@@ -241,7 +255,8 @@
                 android:layout_weight="1"
                 android:text="@string/point"
                 android:onClick="pointBTN"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/equalsBTN"
@@ -251,7 +266,8 @@
                 android:layout_weight="1"
                 android:onClick="equalsBTN"
                 android:text="@string/equals"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:id="@+id/addBTN"
@@ -261,7 +277,8 @@
                 android:layout_weight="1"
                 android:onClick="addBTN"
                 android:text="@string/add"
-                android:textSize="@dimen/calc_btn_size" />
+                android:textSize="@dimen/calc_btn_size"
+                tools:ignore="UsingOnClickInXml"/>
         </TableRow>
     </TableLayout>
 
