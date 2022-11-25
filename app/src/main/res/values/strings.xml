@@ -39,5 +39,9 @@
     <string name="x_2">x^2</string>
     <string name="x_y">x^y</string>
 
+    <string name="openParenthesis">(</string>
+    <string name="closedParenthesis">)</string>
+    <string name="percent">%</string>
+
     <string name="default_display">input</string>\
 </resources>

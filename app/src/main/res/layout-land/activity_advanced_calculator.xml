@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_begin="10dp"
         app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -28,316 +28,386 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="10dp"
+        app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="1" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline1">
+        app:layout_constraintTop_toBottomOf="@+id/resultAdvancedTV"
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/backspaceBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="backspaceBTN"
                 android:text="@string/backspace"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/clearBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="clearBTN"
                 android:text="@string/clear"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/openParenthesisBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="openParenthesisBTN"
+                android:text="@string/openParenthesis"
+                android:textSize="@dimen/adv_calc_btn_size"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/closedParenthesisBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="closedParenthesisBTN"
+                android:text="@string/closedParenthesis"
+                android:textSize="@dimen/adv_calc_btn_size"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/percentBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="percentBTN"
+                android:text="@string/percent"
+                android:textSize="@dimen/adv_calc_btn_size"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/signChangeBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="signChangeBTN"
                 android:text="@string/signChange"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/sinBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/sin"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/cosBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/cos"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/tanBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/tan"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/lnBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/ln"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/sqrtBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/sqrt"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/x_2BTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/x_2"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/x_yBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/x_y"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-
-            <Button
-                android:id="@+id/logBTN"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/log"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/sevenBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="sevenBTN"
                 android:text="@string/seven"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/eightBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="eightBTN"
                 android:text="@string/eight"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/nineBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="nineBTN"
                 android:text="@string/nine"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/divideBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="divideBTN"
                 android:text="@string/divide"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/sinBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sinBTN"
+                android:text="@string/sin"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/cosBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="cosBTN"
+                android:text="@string/cos"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/fourBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="fourBTN"
                 android:text="@string/four"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/fiveBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="fiveBTN"
                 android:text="@string/five"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/sixBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="sixBTN"
                 android:text="@string/six"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/multiplyBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="multiplyBTN"
                 android:text="@string/multiply"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/tanBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tanBTN"
+                android:text="@string/tan"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/lnBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="lnBTN"
+                android:text="@string/ln"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/oneBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="oneBTN"
                 android:text="@string/one"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/twoBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="twoBTN"
                 android:text="@string/two"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/threeBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="threeBTN"
                 android:text="@string/three"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/subtractBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="subtractBTN"
                 android:text="@string/subtract"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/sqrtBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sqrtBTN"
+                android:text="@string/sqrt"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/x_2BTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="powTwoBTN"
+                android:text="@string/x_2"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/zeroBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="zeroBTN"
                 android:text="@string/zero"
                 android:textSize="@dimen/adv_calc_btn_size_land"
-                tools:ignore="DuplicateSpeakableTextCheck" />
+                tools:ignore="DuplicateSpeakableTextCheck, UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/pointBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="pointBTN"
                 android:text="@string/point"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/equalsBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="equalsBTN"
                 android:text="@string/equals"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/addBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="addBTN"
                 android:text="@string/add"
-                android:textSize="@dimen/adv_calc_btn_size_land" />
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/x_yBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="powBTN"
+                android:text="@string/x_y"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/logBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="logBTN"
+                android:text="@string/log"
+                android:textSize="@dimen/adv_calc_btn_size_land"
+                tools:ignore="UsingOnClickInXml" />
 
         </TableRow>
     </TableLayout>
 
     <EditText
-        android:id="@+id/resultAdvancedLandTV"
+        android:id="@+id/resultAdvancedTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:autofillHints="false"
         android:inputType="none"
